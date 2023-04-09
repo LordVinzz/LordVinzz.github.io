@@ -3,25 +3,23 @@ function voronoiNoise(x, y, featurePoints) {
 
     for (const feature of featurePoints) {
         const dist = Math.sqrt((feature.x - x) ** 2 + (feature.y - y) ** 2);
-        //const dist = Math.abs(feature.x - x) + Math.abs(feature.y - y); Norme de manhattan
-        //const dist = Math.max(Math.abs(feature.x - x), Math.abs(feature.y - y)); // Norme de chebyshev
         minDist = Math.min(minDist, dist);
     }
 
-    return Math.max(127-minDist, 34);
+    return Math.max(185-minDist, 34);
 }
 
 function drawVornoi(){
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
     
-    const header = document.getElementById('header');
+    const header = document.getElementById('page');
 
     canvas.width = header.offsetWidth;
-    canvas.height = header.offsetHeight;
+    canvas.height = page.offsetHeight;
 
     const featurePoints = [];
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 24; i++) {
         featurePoints.push({
             x: Math.floor(Math.random() * canvas.width),
             y: Math.floor(Math.random() * canvas.height),

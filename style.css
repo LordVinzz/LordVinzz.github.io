@@ -1,7 +1,15 @@
-body {
+
+
+body,html {
     font-family: consolas;
     background-color: #222;
+
+    padding: 0%;
+    margin: 0%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
 
 header {
     background-color: #333;
@@ -21,12 +29,14 @@ header div {
 }
 
 main {
-    background-color: #323232;
+    position: relative;
+    background-color: #B7B7B7;
     padding: 20px;
     margin: 20px auto;
     max-width: 90%;
     height: auto;
     border-radius: 10px;
+    z-index: 3;
 }
 
 main h2 {
@@ -34,10 +44,12 @@ main h2 {
 }
 
 footer {
-    background-color: #333;
+    position:relative;
+    background-color: #00000000;
     color: #fff;
     padding: 20px;
     text-align: center;
+    z-index: 2;
 }
 
 footer img {
@@ -62,8 +74,6 @@ section h2{
 
 canvas{
     position: absolute;
-    width: auto;
-    height: auto;
     margin: 0px;
     padding: 0px;
     z-index: 1;
