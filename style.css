@@ -1,0 +1,102 @@
+body {
+    font-family: consolas;
+    background-color: #222;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    height: 215px;
+    width: auto;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header div {
+    display: inline-block;
+    width: auto;
+}
+
+main {
+    background-color: #323232;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+main h2 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+section ul {
+    list-style-type: georgian;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+section a{
+    color: #c5733c;
+}
+
+section h2{
+    color: #3A8CC3;
+}
+
+canvas{
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+
+.name {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    background-color: #0F0F0F;
+    border-radius: 30px;
+}
+
+.circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    white-space: nowrap;
+    position: absolute;
+    z-index: 2;
+    padding: 25px;
+    margin: 0px;
+}
+
